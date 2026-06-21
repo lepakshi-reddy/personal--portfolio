@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lepakshi Reddy - Aspiring Data Scientist | B.Tech Data Science Student Portfolio" />
+  <title>Lepakshi Reddy | Data Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body data-theme="dark">
+<canvas id="particles"></canvas>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo">LR.</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+
+    <a href="#achievements">Achievements</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+      <a href="images/resume.pdf" target="_blank" rel="noopener" download>Resume</a>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  </div>
+  <div style="display:flex;gap:0.75rem;align-items:center;">
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme" id="theme-btn-mob">🌙</button>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#certifications" onclick="closeMobile()">Certifications</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#achievements" onclick="closeMobile()">Achievements</a>
+  <a href="#github" onclick="closeMobile()">GitHub</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <div class="hero-badge"><span></span> Open for Internship Opportunities</div>
+        <h1 class="hero-name">Lepakshi<br/>Reddy</h1>
+        <div class="hero-title">
+          <span id="typed"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">Professional Data Science student specializing in machine learning, data-driven product design, and polished frontend experiences. I build solutions that are both technical and user-friendly.</p>
+        <div class="hero-socials">
+          <a class="social-link" href="https://github.com/lepakshi-reddy/team-pr" target="_blank" title="GitHub">⌥</a>
+          <a class="social-link" href="https://www.linkedin.com/in/bobbala-chinnolla-lepakshi-reddy" target="_blank" title="LinkedIn">in</a>
+          <a class="social-link" href="mailto:lepakshireddy7458@gmail.com" title="Email">✉</a>
+        </div>
+        <div class="hero-btns">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap reveal">
+        <img src="images/avatar.svg" alt="Professional avatar illustration" class="hero-avatar" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="glass-card about-info reveal">
+        <h3>Who I Am</h3>
+        <p>I'm a B.Tech Data Science student with a strong passion for turning data into meaningful insights. Currently pursuing my degree (graduating 2028) from Andhra Pradesh, India, I'm on a journey to become a skilled Data Scientist.</p>
+        <p>I thrive on learning new technologies and applying them to real-world challenges — from web development to machine learning models.</p>
+        <div class="about-meta" style="margin-top:1.5rem;">
+          <div class="meta-item"><div class="meta-icon">🎓</div> B.Tech Data Science (2024–2028)</div>
+          <div class="meta-item"><div class="meta-icon">📍</div> Andhra Pradesh, India</div>
+          <div class="meta-item"><div class="meta-icon">💡</div> Interests: AI, ML, Data Analytics, SWE</div>
+          <div class="meta-item"><div class="meta-icon">📩</div> lepakshireddy7458@gmail.com</div>
+        </div>
+      </div>
+      <div class="glass-card strengths-wrap reveal">
+        <h3>Core Strengths</h3>
+        <div class="strength-tags">
+          <span class="strength-tag">📊 Data Analysis</span>
+          <span class="strength-tag">🧠 Problem Solving</span>
+          <span class="strength-tag">🤖 Machine Learning</span>
+          <span class="strength-tag">💻 Programming</span>
+          <span class="strength-tag">🚀 Continuous Learning</span>
+          <span class="strength-tag">🌐 Web Development</span>
+          <span class="strength-tag">📈 Data Visualization</span>
+          <span class="strength-tag">🔍 Research</span>
+        </div>
+        <div style="margin-top:2rem;">
+          <h3 style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:1rem;">Currently Learning</h3>
+          <div class="strength-tags">
+            <span class="strength-tag">🐍 Python ML</span>
+            <span class="strength-tag">📉 Statistics</span>
+            <span class="strength-tag">☁️ Cloud Basics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="glass-card tl-card">
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <div class="tl-sub">Specialization: Data Science</div>
+          <div class="tl-year">2024 – 2028 (Expected)</div>
+          <p>Currently pursuing B.Tech in Data Science, gaining foundational and advanced knowledge in programming, data analysis, machine learning, and artificial intelligence. Actively building projects and skills alongside coursework.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="glass-card tl-card">
+          <h3>Secondary Education (Intermediate)</h3>
+          <div class="tl-sub">Andhra Pradesh, India</div>
+          <div class="tl-year">Completed</div>
+          <p>Strong academic foundation with interest in Mathematics and Computer Science, paving the way for Data Science studies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-title">Programming</div>
+        <div class="skill-item"><span>Python</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>SQL</span><span class="skill-badge beginner">Beginner</span></div>
+      </div>
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-title">Web Development</div>
+        <div class="skill-item"><span>HTML</span><span class="skill-badge advanced">Advanced</span></div>
+        <div class="skill-item"><span>CSS</span><span class="skill-badge advanced">Advanced</span></div>
+        <div class="skill-item"><span>Bootstrap</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>JavaScript</span><span class="skill-badge beginner">Beginner</span></div>
+      </div>
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-title">Tools & DevOps</div>
+        <div class="skill-item"><span>Git</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>GitHub</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>VS Code</span><span class="skill-badge advanced">Advanced</span></div>
+      </div>
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-title">Data Science & ML</div>
+        <div class="skill-item"><span>Data Analysis</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>Pandas / NumPy</span><span class="skill-badge intermediate">Intermediate</span></div>
+        <div class="skill-item"><span>Scikit-Learn</span><span class="skill-badge beginner">Beginner</span></div>
+        <div class="skill-item"><span>Matplotlib / Seaborn</span><span class="skill-badge beginner">Beginner</span></div>
+        <div class="skill-item"><span>ML Fundamentals</span><span class="skill-badge beginner">Beginner</span></div>
+        <div class="skill-item"><span>SQL & Databases</span><span class="skill-badge beginner">Beginner</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon">🐍</div>
+        <h3>Python Programming</h3>
+        <p>Core Python programming concepts, data structures, and problem solving</p>
+        <span class="cert-badge">Completed</span>
+        <a href="images/cert-python.svg" target="_blank" class="cert-link">View Certificate →</a>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, Bootstrap — building responsive and modern web interfaces</p>
+        <span class="cert-badge">Completed</span>
+        <a href="#" target="_blank" class="cert-link">View Certificate →</a>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon">📊</div>
+        <h3>Data Science Fundamentals</h3>
+        <p>Introduction to data science workflow, analysis, and visualization techniques</p>
+        <span class="cert-badge">Completed</span>
+        <a href="#" target="_blank" class="cert-link">View Certificate →</a>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon">🤖</div>
+        <h3>Machine Learning Basics</h3>
+        <p>Core ML concepts, supervised learning, and model evaluation methods</p>
+        <span class="cert-badge">Completed</span>
+        <a href="#" target="_blank" class="cert-link">View Certificate →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements-grid">
+      <div class="glass-card ach-card reveal"><div class="ach-icon">🌐</div><div class="ach-text"><h3>Web Development Projects</h3><p>Successfully built multiple responsive web development projects showcasing frontend skills.</p></div></div>
+      <div class="glass-card ach-card reveal"><div class="ach-icon">🤖</div><div class="ach-text"><h3>Data Science Learning</h3><p>Actively learning and applying Data Science and Machine Learning concepts through projects.</p></div></div>
+      <div class="glass-card ach-card reveal"><div class="ach-icon">⌥</div><div class="ach-text"><h3>Active GitHub Contributor</h3><p>Regularly contributing to repositories and maintaining a consistent coding habit on GitHub.</p></div></div>
+      <div class="glass-card ach-card reveal"><div class="ach-icon">📚</div><div class="ach-text"><h3>Continuous Skill Development</h3><p>Earned multiple certifications in Python, Web Dev, Data Science, and Machine Learning.</p></div></div>
+      <div class="glass-card ach-card reveal"><div class="ach-icon">🏫</div><div class="ach-text"><h3>Workshop Participation</h3><p>Attended workshops and seminars to stay updated with industry trends and best practices.</p></div></div>
+      <div class="glass-card ach-card reveal"><div class="ach-icon">💡</div><div class="ach-text"><h3>Coding Practice</h3><p>Consistent coding practice and project building to strengthen problem-solving abilities.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB -->
+<section id="github">
+  <div class="container">
+    <h2 class="section-title">GitHub</h2>
+    <div class="github-wrap">
+      <div class="github-stats">
+        <div class="glass-card stat-card reveal"><div class="stat-num">8+</div><div class="stat-label">Repositories</div></div>
+        <div class="glass-card stat-card reveal"><div class="stat-num">5</div><div class="stat-label">Data Projects</div></div>
+        <div class="glass-card stat-card reveal"><div class="stat-num">120+</div><div class="stat-label">Commits</div></div>
+        <div class="glass-card stat-card reveal"><div class="stat-num">2024</div><div class="stat-label">Active Since</div></div>
+      </div>
+      <a class="github-btn" href="https://github.com/lepakshi-reddy/team-pr" target="_blank">⌥ View GitHub Profile</a>
+      <div class="glass-card contrib-section reveal">
+        <div style="padding:1.5rem 1.5rem 0;color:var(--text-muted);font-size:0.82rem;text-align:left;">Contribution Activity</div>
+        <div class="contrib-grid" id="contribGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new opportunities, internships, collaborations, or simply connecting with fellow data enthusiasts. Feel free to reach out!</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="ci-icon">✉</div><div class="ci-text"><span>Email</span><a href="mailto:lepakshireddy7458@gmail.com">lepakshireddy7458@gmail.com</a></div></div>
+          <div class="contact-item"><div class="ci-icon">⌥</div><div class="ci-text"><span>GitHub</span><a href="https://github.com/lepakshi-reddy/team-pr" target="_blank">github.com/lepakshi-reddy</a></div></div>
+          <div class="contact-item"><div class="ci-icon">in</div><div class="ci-text"><span>LinkedIn</span><a href="https://www.linkedin.com/in/bobbala-chinnolla-lepakshi-reddy" target="_blank">Lepakshi Reddy</a></div></div>
+          <div class="contact-item"><div class="ci-icon">📍</div><div class="ci-text"><span>Location</span><a>Andhra Pradesh, India</a></div></div>
+        </div>
+      </div>
+      <div class="glass-card contact-form reveal">
+        <div id="formArea">
+          <form id="contactForm">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" id="fname" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" id="femail" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" name="subject" id="fsubject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" id="fmessage" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;text-align:center;">Send Message →</button>
+          </form>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="check">✅</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-name">Lepakshi Reddy</div>
+        <p>Aspiring Data Scientist passionate about solving real-world problems with data.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-links"><h4 style="margin-bottom:1rem;">Connect</h4></div>
+        <div class="footer-social">
+          <a class="social-link" href="https://github.com/lepakshi-reddy/team-pr" target="_blank" title="GitHub">⌥</a>
+          <a class="social-link" href="https://www.linkedin.com/in/bobbala-chinnolla-lepakshi-reddy" target="_blank" title="LinkedIn">in</a>
+          <a class="social-link" href="mailto:lepakshireddy7458@gmail.com" title="Email">✉</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Lepakshi Reddy. Built with passion 💙</p>
+      <a class="back-top" href="#home" title="Back to top">↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

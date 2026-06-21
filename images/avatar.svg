@@ -1,0 +1,23 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="40" fill="#F4F7FF"/>
+  <circle cx="400" cy="240" r="140" fill="#FFE0B2"/>
+  <path d="M340 170C340 140 365 120 400 120C435 120 460 140 460 170V210C460 240 435 260 400 260C365 260 340 240 340 210V170Z" fill="#F9C18D"/>
+  <path d="M300 275C300 225 340 190 400 190C460 190 500 225 500 275V320C500 360 460 390 400 390C340 390 300 360 300 320V275Z" fill="#FFE0B2"/>
+  <path d="M295 282C295 278 299 275 303 275H497C501 275 505 278 505 282V325C505 365 465 395 400 395C335 395 295 365 295 325V282Z" fill="#F9C18D"/>
+  <ellipse cx="360" cy="255" rx="24" ry="18" fill="#2F2E41"/>
+  <ellipse cx="440" cy="255" rx="24" ry="18" fill="#2F2E41"/>
+  <circle cx="357" cy="250" r="8" fill="#fff"/>
+  <circle cx="437" cy="250" r="8" fill="#fff"/>
+  <path d="M360 320C360 330 380 335 400 335C420 335 440 330 440 320" stroke="#2F2E41" stroke-width="8" stroke-linecap="round"/>
+  <path d="M255 220C255 170 300 135 355 125C370 122 385 120 400 120C415 120 430 122 445 125C500 135 545 170 545 220V260C545 280 533 293 515 295C508 296 500 293 496 286C478 252 450 220 400 220C350 220 322 252 304 286C300 293 292 296 285 295C267 293 255 280 255 260V220Z" fill="#2F2E41"/>
+  <path d="M260 395C260 330 320 285 400 285C480 285 540 330 540 395V565H260V395Z" fill="#0457C2"/>
+  <path d="M260 395L400 450L540 395V565H260V395Z" fill="#2F2E41" opacity="0.08"/>
+  <path d="M400 285L410 190C410 180 420 175 430 177C444 179 458 183 471 190C500 210 520 245 520 285H400Z" fill="#2F2E41" opacity="0.08"/>
+  <path d="M260 395C260 395 300 230 400 230C500 230 540 395 540 395" stroke="#0B4BB3" stroke-width="14" stroke-linecap="round"/>
+  <path d="M330 565C330 615 310 660 280 700C270 715 288 730 305 730C330 730 360 710 400 710C440 710 470 730 495 730C512 730 530 715 520 700C490 660 470 615 470 565H330Z" fill="#1E3A8A"/>
+  <path d="M180 500C180 490 190 480 200 480H600C610 480 620 490 620 500V560C620 570 610 580 600 580H200C190 580 180 570 180 560V500Z" fill="#3B82F6" opacity="0.18"/>
+  <circle cx="535" cy="170" r="78" fill="#D9E8FF"/>
+  <path d="M520 150L540 136L564 156" stroke="#2563EB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M540 170L558 170" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+  <path d="M465 132L500 142L521 122" stroke="#2563EB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
