@@ -62,7 +62,8 @@ revEls.forEach(el => obs.observe(el));
 // CONTRIBUTION GRID
 const grid = document.getElementById('contribGrid');
 const lvls = [0,0,0,0,1,1,1,2,2,3,4];
-for (let i = 0; i < 24; i++) {
+const totalDays = 52 * 7;
+for (let i = 0; i < totalDays; i++) {
   const c = document.createElement('div');
   const l = lvls[Math.floor(Math.random()*lvls.length)];
   c.className = 'contrib-cell' + (l ? ' l'+l : '');
@@ -91,12 +92,15 @@ if (contactForm) {
       if (response.ok) {
         document.getElementById('formArea').style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
+        document.getElementById('formError').style.display = 'none';
         contactForm.reset();
       } else {
-        alert('There was a problem sending your message. Please try again.');
+        document.getElementById('formError').textContent = 'There was a problem sending your message. Please try again.';
+        document.getElementById('formError').style.display = 'block';
       }
     } catch (error) {
-      alert('Error sending message. Please try again or contact directly.');
+      document.getElementById('formError').textContent = 'Error sending message. Please try again or contact directly.';
+      document.getElementById('formError').style.display = 'block';
       console.error('Form submission error:', error);
     }
   });
